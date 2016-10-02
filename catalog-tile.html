@@ -10,7 +10,7 @@
 <body>
     <div class="header">
         <div class="header__top">
-            <a href="/" class="logo"></a>
+            <a href="index.html" class="logo"></a>
             <span class="glyphicon glyphicon-phone-alt"></span>
             <span class="phone">+7 (843) 272 0202</span>
             <span class="divider"></span>
@@ -83,35 +83,38 @@
         <a href="catalog-tile.html">Электроинструмент</a>
         <a href="catalog-list.html">Электротовары</a>
     </div>
-    <div class="content">
-        <div class="slider"></div>
-        <div class="widget-selection">
-            <h2 class="widget-selection__title">Скидки</h2>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod1.jpg" alt="">
-                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
+    <div class="content content_divider">
+        <div class="catalog-list-header">
+            <div class="breadcrumbs">
+                <a href="#">Инструмент</a>
+                <span class="breadcrumbs__divider">&gt;</span>
+                <a href="#">Абразивный инструмент</a>
+                <span class="breadcrumbs__divider">&gt;</span>
+                <a href="#">Диски алмазные</a>
             </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod2.jpg" alt="">
-                    <h3 class="product__title">Дрель сетевая безударная</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
+            <div class="catalog-list-mode">
+                <span class="divider"></span>
+                <a href="catalog-list.html" class="catalog-list-mode__list">
+                    <span class="glyphicon glyphicon-th-list"></span> Таблица
+                </a>
+                <span class="divider"></span>
+                <a href="catalog-tile.html" class="catalog-list-mode__tile active">
+                    <span class="glyphicon glyphicon-th"></span> Плитка
+                </a>
             </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod3.png" alt="">
-                    <h3 class="product__title">Грунт для внутренних работ </h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
+            <label class="sort">
+                <span class="glyphicon glyphicon-sort"></span>
+                Сортировать:
+                <select>
+                    <option value="0" selected>Цена по возрастанию</option>
+                    <option value="1">Цена по убыванию</option>
+                    <option value="2">Популярность</option>
+                    <option value="3">Название</option>
+                </select>
+            </label>
+        </div>
+        <div class="catalog-list">
+            <div class="catalog-list__item">
                 <div class="product">
                     <img class="product__picture" src="images/prod4.jpg" alt="">
                     <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
@@ -119,7 +122,231 @@
                     <div class="product__to-card">в корзину</div>
                 </div>
             </div>
-            <div class="widget-selection__item">
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod4.jpg" alt="">
+                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod4.jpg" alt="">
+                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod4.jpg" alt="">
+                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod4.jpg" alt="">
+                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod4.jpg" alt="">
+                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod1.jpg" alt="">
+                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod3.png" alt="">
+                    <h3 class="product__title">Грунт для внутренних работ </h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
+                <div class="product">
+                    <img class="product__picture" src="images/prod2.jpg" alt="">
+                    <h3 class="product__title">Дрель сетевая безударная</h3>
+                    <div class="product__price">3 267,00 руб./шт.</div>
+                    <div class="product__to-card">в корзину</div>
+                </div>
+            </div>
+            <div class="catalog-list__item">
                 <div class="product">
                     <img class="product__picture" src="images/prod1.jpg" alt="">
                     <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
@@ -129,93 +356,11 @@
             </div>
 
         </div>
-        <div class="widget-selection">
-            <h2 class="widget-selection__title">Топ продаж</h2>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod1.jpg" alt="">
-                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod2.jpg" alt="">
-                    <h3 class="product__title">Дрель сетевая безударная</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod3.png" alt="">
-                    <h3 class="product__title">Грунт для внутренних работ </h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod4.jpg" alt="">
-                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod1.jpg" alt="">
-                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-
-        </div>
-        <div class="widget-selection">
-            <h2 class="widget-selection__title">Новинки</h2>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod1.jpg" alt="">
-                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod2.jpg" alt="">
-                    <h3 class="product__title">Дрель сетевая безударная</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod3.png" alt="">
-                    <h3 class="product__title">Грунт для внутренних работ </h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod4.jpg" alt="">
-                    <h3 class="product__title">Краска для стен Профилюкс, 3 кг</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-            <div class="widget-selection__item">
-                <div class="product">
-                    <img class="product__picture" src="images/prod1.jpg" alt="">
-                    <h3 class="product__title">Состав КОРД огнебиозащитный 10 л</h3>
-                    <div class="product__price">3 267,00 руб./шт.</div>
-                    <div class="product__to-card">в корзину</div>
-                </div>
-            </div>
-
+        <div class="more">
+            <button class="more__button">
+                <span class="glyphicon glyphicon-cloud-download"></span>
+                Загрузить еще
+            </button>
         </div>
     </div>
 </body>
