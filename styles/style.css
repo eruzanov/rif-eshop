@@ -131,11 +131,11 @@
 .content {
   float: left;
   width: 80%;
+  border-left: 1px solid #EEEEEE;
 }
 .content .widget-selection {
   padding: 20px 0 10px;
   overflow: hidden;
-  border-left: 1px solid #EEEEEE;
 }
 .content .widget-selection:first-child {
   padding-top: 30px;
