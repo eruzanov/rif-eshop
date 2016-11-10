@@ -5,6 +5,10 @@
 @color-danger: #FF0000;
 @color-divider: #EEEEEE;
 
+body {
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
 .divider {
   margin: 0 10px;
   border-right: 1px solid #eee;
@@ -146,11 +150,9 @@
   width: 80%;
   border-left: 1px solid @color-divider;
   .widget-selection {
-    padding: 20px 0 10px;
-    overflow: hidden;
-    &:first-child {
-      padding-top: 30px;
-    }
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0;
     .widget-selection__title {
       border-bottom: 1px solid @color-divider;
       text-align: center;
@@ -158,9 +160,11 @@
       color: @color-danger;
     }
     .widget-selection__item {
-      float: left;
-      width: 20%;
-      padding: 10px;
+      flex-grow: 1;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid @color-primary;
+      }
       .product {
         margin: 0 auto;
       }
@@ -173,29 +177,65 @@
 }
 
 .product {
+  position: relative;
   width: 200px;
-  height: 265px;
-  border: 1px solid @color-divider;
+  .product-label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    min-width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .product-label_sale {
+    .product-label();
+    background-color: @color-danger;
+  }
+  .product-label_top {
+    .product-label();
+    background-color: @color-warning;
+  }
+  .product-label_new {
+    .product-label();
+    color: #000000;
+    background-color: @color-success;
+  }
   .product__picture {
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     height: 150px;
     background-position: center;
     background-size: contain;
   }
   .product__title {
-    padding: 0 10px;
+    padding: 0 5px;
     font-weight: normal;
   }
   .product__price {
-    padding: 0 10px;
+    display: inline-block;
+    padding: 0 5px;
     font-size: 18px;
     font-weight: bold;
   }
+  .product__price_old {
+    .product__price();
+    font-weight: normal;
+    color: #B5B5B5;
+    text-decoration: line-through;
+  }
   .product__to-card {
-    padding: 0 10px;
-    color: @color-danger;
+    display: inline-block;
+    margin: 5px 5px 10px;
+    padding: 5px 15px;
+    color: @color-primary;
+    border: 1px solid @color-primary;
     cursor: pointer;
+    &:hover {
+      background-color: @color-primary;
+      color: #FFFFFF;
+    }
   }
 }
 
