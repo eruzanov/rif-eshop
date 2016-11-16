@@ -87,11 +87,13 @@ body {
           line-height: 40px;
           font-size: 1.5em;
           color: @color-warning;
+          text-decoration: none;
         }
       }
       .cart {
         padding: 0 20px;
         font-size: 1.3em;
+        text-decoration: none;
         .card-ico {
           vertical-align: text-bottom;
           font-size: 1.5em;
@@ -184,7 +186,22 @@ body {
 
 .footer {
   background-color: @color-divider;
-  height: 200px;
+  padding: 20px 0;
+  div {
+    display: flex;
+    margin: 0 auto;
+    width: @container-width;
+    address {
+      padding-right: 40px;
+      font-style: normal;
+      p {
+        margin: 10px 0;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .catalog-list-side_divider {

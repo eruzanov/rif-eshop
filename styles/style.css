@@ -75,10 +75,12 @@ body {
   line-height: 40px;
   font-size: 1.5em;
   color: #E88A0C;
+  text-decoration: none;
 }
 .header .header__middle > div .cart {
   padding: 0 20px;
   font-size: 1.3em;
+  text-decoration: none;
 }
 .header .header__middle > div .cart .card-ico {
   vertical-align: text-bottom;
@@ -165,7 +167,22 @@ body {
 }
 .footer {
   background-color: #EEEEEE;
-  height: 200px;
+  padding: 20px 0;
+}
+.footer div {
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+}
+.footer div address {
+  padding-right: 40px;
+  font-style: normal;
+}
+.footer div address p {
+  margin: 10px 0;
+}
+.footer div address p a {
+  text-decoration: none;
 }
 .catalog-list-side_divider {
   border-right: 1px solid #EEEEEE;
