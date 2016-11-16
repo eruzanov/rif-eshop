@@ -6,7 +6,6 @@
 @color-divider: #EEEEEE;
 
 @container-width: 1300px;
-@catalog-width: 270px;
 
 body {
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
@@ -39,10 +38,11 @@ body {
     height: 100px;
     .logo {
       float: left;
-      width: @catalog-width;
+      width: @container-width / 4;
       height: 100px;
       background-image: url(../images/logo.png);
-      background-position: center 61%;
+      background-position: center 130%;
+      background-size: 80%;
     }
     > div {
       display: flex;
@@ -125,7 +125,7 @@ body {
         background-color: lighten(@color-primary, 10%);
       }
       .nav-menu__item_catalog {
-        width: @catalog-width;
+        width: @container-width / 4;
         padding: 0 10px;
       }
       .nav-menu__item_stock {
@@ -143,7 +143,7 @@ body {
   margin: 0 auto;
   width: @container-width;
   .catalog-list-side {
-    width: 270px;
+    width: @container-width / 4;
     a {
       box-sizing: border-box;
       display: block;
@@ -160,7 +160,7 @@ body {
     }
   }
   .content {
-    width: @container-width - @catalog-width;
+    width: @container-width - @container-width / 4;
     .widget-selection {
       display: flex;
       flex-flow: row wrap;

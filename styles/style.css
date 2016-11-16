@@ -27,10 +27,11 @@ body {
 }
 .header .header__middle .logo {
   float: left;
-  width: 270px;
+  width: 325px;
   height: 100px;
   background-image: url(../images/logo.png);
-  background-position: center 61%;
+  background-position: center 130%;
+  background-size: 80%;
 }
 .header .header__middle > div {
   display: flex;
@@ -112,7 +113,7 @@ body {
   background-color: #128be4;
 }
 .header .nav-menu div .nav-menu__item_catalog {
-  width: 270px;
+  width: 325px;
   padding: 0 10px;
 }
 .header .nav-menu div .nav-menu__item_stock {
@@ -127,7 +128,7 @@ body {
   width: 1300px;
 }
 .container .catalog-list-side {
-  width: 270px;
+  width: 325px;
 }
 .container .catalog-list-side a {
   box-sizing: border-box;
@@ -143,7 +144,7 @@ body {
   background-color: #128be4;
 }
 .container .content {
-  width: 1030px;
+  width: 975px;
 }
 .container .content .widget-selection {
   display: flex;
