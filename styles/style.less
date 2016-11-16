@@ -102,6 +102,7 @@ body {
   .nav-menu {
     background-color: @color-primary;
     overflow: hidden;
+    font-size: 17px;
     div {
       margin: 0 auto;
       width: @container-width;
@@ -179,6 +180,11 @@ body {
       }
     }
   }
+}
+
+.footer {
+  background-color: @color-divider;
+  height: 200px;
 }
 
 .catalog-list-side_divider {
@@ -381,4 +387,41 @@ body {
   font-size: 2em;
   color: #FFFFFF;
   background-color: @color-divider;
+}
+
+.sub-categories {
+  margin: 0 auto;
+  width: @container-width;
+  .sub-categories__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    & > * {
+      margin: 20px 0;
+      padding: 0 20px;
+      border-right: 1px solid @color-divider;
+    }
+    & > *:first-child,
+    & > *:nth-child(5n)
+    {
+      border-left: 1px solid @color-divider;
+    }
+    .sub-category {
+      width: @container-width / 4;
+      .sub-category__title {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+      }
+      ul {
+        list-style: none;
+        font-size: 16px;
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
 }
