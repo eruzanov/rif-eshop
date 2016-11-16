@@ -35,12 +35,12 @@ body {
 .header .header__middle > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 .header .header__middle > div .search {
   position: relative;
-  float: left;
   width: 500px;
-  height: 100px;
 }
 .header .header__middle > div .search .search__input {
   box-sizing: border-box;
@@ -71,20 +71,18 @@ body {
 .header .header__middle > div .search .search__submit:hover {
   background-color: #107ccd;
 }
-.header .header__middle > div .phones {
-  float: left;
-  padding: 10px 40px;
-}
 .header .header__middle > div .phones .phones__item {
   line-height: 40px;
   font-size: 1.5em;
   color: #E88A0C;
 }
 .header .header__middle > div .cart {
-  float: left;
-  height: 100px;
-  line-height: 100px;
+  padding: 0 20px;
   font-size: 1.3em;
+}
+.header .header__middle > div .cart .card-ico {
+  vertical-align: text-bottom;
+  font-size: 1.5em;
 }
 .header .nav-menu {
   background-color: #0E6EB5;

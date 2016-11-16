@@ -47,11 +47,11 @@ body {
     > div {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
       .search {
         position: relative;
-        float: left;
         width: 500px;
-        height: 100px;
         .search__input {
           box-sizing: border-box;
           position: absolute;
@@ -83,8 +83,6 @@ body {
         }
       }
       .phones {
-        float: left;
-        padding: 10px 40px;
         .phones__item {
           line-height: 40px;
           font-size: 1.5em;
@@ -92,10 +90,12 @@ body {
         }
       }
       .cart {
-        float: left;
-        height: 100px;
-        line-height: 100px;
+        padding: 0 20px;
         font-size: 1.3em;
+        .card-ico {
+          vertical-align: text-bottom;
+          font-size: 1.5em;
+        }
       }
     }
   }
