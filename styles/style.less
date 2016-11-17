@@ -8,7 +8,7 @@
 @container-width: 1300px;
 
 body {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .divider {
@@ -17,11 +17,12 @@ body {
 }
 
 .header {
+  background-color: @color-divider;
   .header__top {
     box-sizing: border-box;
     padding: 0 10px;
     height: 40px;
-    border-bottom: 1px solid @color-divider;
+    border-bottom: 1px solid darken(@color-divider, 10%);
     text-align: center;
     a {
       line-height: 40px;
@@ -63,6 +64,7 @@ body {
           line-height: 28px;
           font-size: 1.3em;
           border: 1px solid @color-primary;
+          background-color: #FFFFFF;
           &:focus {
             outline: none;
           }
@@ -187,18 +189,24 @@ body {
 .footer {
   background-color: @color-divider;
   padding: 20px 0;
-  div {
+  > div {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     width: @container-width;
-    address {
-      padding-right: 40px;
-      font-style: normal;
-      p {
+    ul {
+      list-style: none;
+      li {
         margin: 10px 0;
-        a {
-          text-decoration: none;
-        }
+      }
+    }
+    p {
+      margin: 10px 0;
+    }
+    address {
+      font-style: normal;
+      a {
+        text-decoration: none;
       }
     }
   }
@@ -419,8 +427,7 @@ body {
       border-right: 1px solid @color-divider;
     }
     & > *:first-child,
-    & > *:nth-child(5n)
-    {
+    & > *:nth-child(5n) {
       border-left: 1px solid @color-divider;
     }
     .sub-category {

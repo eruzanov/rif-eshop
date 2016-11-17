@@ -1,15 +1,18 @@
 body {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .divider {
   margin: 0 10px;
   border-right: 1px solid #eee;
 }
+.header {
+  background-color: #EEEEEE;
+}
 .header .header__top {
   box-sizing: border-box;
   padding: 0 10px;
   height: 40px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #d5d5d5;
   text-align: center;
 }
 .header .header__top a {
@@ -54,6 +57,7 @@ body {
   line-height: 28px;
   font-size: 1.3em;
   border: 1px solid #0E6EB5;
+  background-color: #FFFFFF;
 }
 .header .header__middle > div .search .search__input:focus {
   outline: none;
@@ -170,19 +174,25 @@ body {
   background-color: #EEEEEE;
   padding: 20px 0;
 }
-.footer div {
+.footer > div {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1300px;
 }
-.footer div address {
-  padding-right: 40px;
-  font-style: normal;
+.footer > div ul {
+  list-style: none;
 }
-.footer div address p {
+.footer > div ul li {
   margin: 10px 0;
 }
-.footer div address p a {
+.footer > div p {
+  margin: 10px 0;
+}
+.footer > div address {
+  font-style: normal;
+}
+.footer > div address a {
   text-decoration: none;
 }
 .catalog-list-side_divider {
