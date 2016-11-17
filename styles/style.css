@@ -172,7 +172,7 @@ body {
 }
 .footer {
   background-color: #EEEEEE;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .footer > div {
   display: flex;
@@ -194,6 +194,12 @@ body {
 }
 .footer > div address a {
   text-decoration: none;
+}
+.footer .copyright {
+  margin-top: 10px;
+  line-height: 40px;
+  border-top: 1px solid #d5d5d5;
+  text-align: center;
 }
 .catalog-list-side_divider {
   border-right: 1px solid #EEEEEE;

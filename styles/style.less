@@ -4,6 +4,7 @@
 @color-warning: #E88A0C;
 @color-danger: #FF0000;
 @color-divider: #EEEEEE;
+@color-divider-darken: darken(@color-divider, 10%);
 
 @container-width: 1300px;
 
@@ -22,7 +23,7 @@ body {
     box-sizing: border-box;
     padding: 0 10px;
     height: 40px;
-    border-bottom: 1px solid darken(@color-divider, 10%);
+    border-bottom: 1px solid @color-divider-darken;
     text-align: center;
     a {
       line-height: 40px;
@@ -188,7 +189,7 @@ body {
 
 .footer {
   background-color: @color-divider;
-  padding: 20px 0;
+  padding: 20px 0 0;
   > div {
     display: flex;
     justify-content: space-between;
@@ -209,6 +210,12 @@ body {
         text-decoration: none;
       }
     }
+  }
+  .copyright {
+    margin-top: 10px;
+    line-height: 40px;
+    border-top: 1px solid @color-divider-darken;
+    text-align: center;
   }
 }
 
