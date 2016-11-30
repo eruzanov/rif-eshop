@@ -336,6 +336,131 @@ body {
   background-color: #0E6EB5;
   color: #FFFFFF;
 }
+.col-1 {
+  padding: 0 10px;
+  width: 8.33333333%;
+}
+.col-2 {
+  padding: 0 10px;
+  width: 16.66666667%;
+}
+.col-3 {
+  padding: 0 10px;
+  width: 25%;
+}
+.col-4 {
+  padding: 0 10px;
+  width: 33.33333333%;
+}
+.col-5 {
+  padding: 0 10px;
+  width: 41.66666667%;
+}
+.col-6 {
+  padding: 0 10px;
+  width: 50%;
+}
+.col-7 {
+  padding: 0 10px;
+  width: 58.33333333%;
+}
+.col-8 {
+  padding: 0 10px;
+  width: 66.66666667%;
+}
+.col-9 {
+  padding: 0 10px;
+  width: 75%;
+}
+.col-10 {
+  padding: 0 10px;
+  width: 83.33333333%;
+}
+.col-11 {
+  padding: 0 10px;
+  width: 91.66666667%;
+}
+.col-12 {
+  padding: 0 10px;
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+.product_in-cart {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #EEEEEE;
+}
+.product_in-cart:hover {
+  border: none;
+  border-bottom: 1px solid #EEEEEE;
+}
+.product_in-cart .product__title {
+  font-size: 1.5em;
+}
+.product_in-cart .product__actions {
+  overflow: hidden;
+}
+.product_in-cart .product__count > * {
+  float: left;
+}
+.product_in-cart .product__count .btn {
+  width: 40px;
+}
+.product_in-cart .product__count input {
+  outline: none;
+  width: 40px;
+  height: 40px;
+  line-height: 28px;
+  font-size: 1.3em;
+  text-align: center;
+  border-top: 1px solid #0E6EB5;
+  border-bottom: 1px solid #0E6EB5;
+}
+.product_in-cart .product__remove {
+  float: right;
+  font-size: 2em;
+  color: #FF0000;
+  background-color: transparent;
+}
+.product_in-cart .product__remove span {
+  line-height: 40px;
+}
+.product_in-cart .product__amount-title {
+  margin: 10px 0;
+}
+.product_in-cart .product__amount {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.cart-total {
+  padding: 10px 0;
+}
+.cart-total .cart-total__title {
+  text-align: right;
+  font-size: 1.5em;
+}
+.cart-total .cart-total__amount {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.btn {
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: #0E6EB5;
+}
+.btn__checkout {
+  width: 100%;
+  font-size: 1.5em;
+  background-color: #E88A0C;
+  padding: 0 20px;
+}
 .slider {
   height: 328px;
   background-image: url(../images/slider/01.jpg);
