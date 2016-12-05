@@ -1,0 +1,40 @@
+{
+  "name": "rif-eshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rif-kazan/rif-eshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rif-kazan/rif-eshop/issues"
+  },
+  "homepage": "https://github.com/rif-kazan/rif-eshop#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "backbone": "^1.3.3",
+    "backbone.marionette": "^3.0.0",
+    "backbone.paginator": "^2.0.5",
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-less": "^3.1.0",
+    "jquery": "^3.1.1",
+    "toastr": "^2.1.2",
+    "underscore": "^1.8.3",
+    "webpack-stream": "^3.2.0"
+  }
+}

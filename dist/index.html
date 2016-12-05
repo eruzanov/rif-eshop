@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Строймаркет "РИФ" г. Казань</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="#app">
+<div class="page-wrap">
+    <div class="header">
+        <div class="header__top">
+            <a href="#">
+                <span class="glyphicon glyphicon-send"></span> Обратная связь
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <span class="glyphicon glyphicon-globe"></span> Адреса магазинов
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <span class="glyphicon glyphicon-plane"></span> Бесплатная погрузка и доставка
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <span class="glyphicon glyphicon-briefcase"></span> Оптовикам
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <span class="glyphicon glyphicon-wrench"></span> Ремонт и отделка
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <span class="glyphicon glyphicon-home"></span> Арендаторам
+            </a>
+            <span class="divider"></span>
+            <a href="#" class="profile">
+                <span class="glyphicon glyphicon-user"></span> Профиль
+            </a>
+        </div>
+        <div class="header__middle">
+            <a href="#index" class="logo"></a>
+            <div>
+                <form class="search">
+                    <input type="text" class="search__input" autofocus>
+                    <button type="submit" class="search__submit">
+                        <span class="glyphicon glyphicon-search"></span> Поиск
+                    </button>
+                </form>
+                <div class="phones">
+                    <a href="tel:+7 (965) 605 0024" class="phones__item">
+                        <span class="glyphicon glyphicon-phone"></span> +7 (965) 605 0024
+                    </a>
+                    <br>
+                    <a href="tel:+7 (843) 272 0202" class="phones__item">
+                        <span class="glyphicon glyphicon-phone-alt"></span> +7 (843) 272 0202
+                    </a>
+                </div>
+                <div data-region="cart"></div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div>
+                <a href="catalog-level1.html" class="nav-menu__item nav-menu__item_active nav-menu__item_catalog">КАТАЛОГ</a>
+                <a href="#" class="nav-menu__item">НОВОСТИ</a>
+                <a href="#" class="nav-menu__item">СТАТЬИ</a>
+                <a href="#" class="nav-menu__item">УСЛУГИ</a>
+                <a href="#" class="nav-menu__item nav-menu__item_stock">
+                    <span class="glyphicon glyphicon-flag"></span> АКЦИИ!
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <div class="page-sidebar" data-region="sidebar"></div>
+        <div class="page-container">
+            <div class="page-content" data-region="content"></div>
+        </div>
+    </div>
+</div>
+<div class="site-footer">
+    <div class="site-footer__top">
+        <div>
+            <strong>Профиль</strong>
+            <ul>
+                <li>
+                    <a href="#">Личный Кабинет</a>
+                </li>
+                <li>
+                    <a href="#">История заказов</a>
+                </li>
+                <li>
+                    <a href="#">Закладки</a>
+                </li>
+                <li>
+                    <a href="#">Рассылка</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <strong>Информация</strong>
+            <ul>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Информация о доставке</a>
+                </li>
+                <li>
+                    <a href="#">Политика Безопасности</a>
+                </li>
+                <li>
+                    <a href="#">Условия соглашения</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <address>
+                <strong>Сибирский тракт, 2-й переезд</strong>
+                <p>
+                    <a href="tel:+7 (843) 272-02-02">
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                        +7 (843) 272-02-02
+                    </a>
+                </p>
+                <p>Режим работы: Будни, Сб: 8:30 до 18:00, Вс: 8:30 до 16:00</p>
+                <p>Склад Режим работы: Пн - Вс: 8:00 до 18:00</p>
+            </address>
+            <address>
+                <strong>Пр. Ямашева, 93, ТК "Савиново"</strong>
+                <p>
+                    <a href="tel:+7 (843) 517-94-19">
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                        +7 (843) 517-94-19
+                    </a>
+                </p>
+                <p>Режим работы: Пн - Вс: 10:00 до 21:00</p>
+            </address>
+        </div>
+        <div>
+            <strong>Прием заказов покупателей</strong>
+            <p>
+                <a href="mailto:info@rif-kazan.ru">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    info@rif-kazan.ru
+                </a>
+            </p>
+            <strong>Прием оптовых заказов</strong>
+            <p>
+                <a href="mailto:ramil-rif@yandex.ru">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    ramil-rif@yandex.ru
+                </a>
+            </p>
+        </div>
+    </div>
+    <p class="copyright">Строймаркет "РИФ" Казань © 2016</p>
+</div>
+<!-- inject:html -->
+<script type="text/template" id="cart-item-tpl">
+<div class="product-label_sale"><%= sale %>%</div>
+<div class="col-3">
+    <img class="product__picture" src="<%= image %>" alt="">
+</div>
+<div class="col-6">
+    <h3 class="product__title"><%= title %></h3>
+    <div>
+        <div class="product__price_old">
+            <%= price %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+        <div class="product__price">
+            <%= priceSale %>
+            <span class="glyphicon glyphicon-rub"></span>
+            / шт.
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="product__actions">
+        <div class="product__count">
+            <button class="btn" data-ui="minus">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+            <input type="text" value="<%= count %>" data-ui="count" readonly>
+            <button class="btn" data-ui="plus">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+        <button class="btn product__remove" data-ui="remove">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+    <p class="product__amount-title">Сумма:</p>
+    <p class="product__amount">
+        <span data-ui="priceTotal"><%= priceTotal %></span>
+        <span class="glyphicon glyphicon-rub"></span>
+    </p>
+</div>
+</script>
+<script type="text/template" id="cart-main-tpl">
+<h1>Корзина</h1>
+<div data-region="list"></div>
+<div class="cart-total row">
+    <div class="col-9 cart-total__title">Итого:</div>
+    <div class="col-3 cart-total__amount">
+        <span data-ui="total"><%= total %></span>
+        <span class="glyphicon glyphicon-rub"></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-8"></div>
+    <div class="col-4">
+        <button class="btn btn__checkout">Оформить заказ</button>
+    </div>
+</div>
+</script>
+<script type="text/template" id="index-main-tpl">
+<div class="slider"></div>
+<div data-region="widget-selection-sale"></div>
+<div class="banner">Баннер: Ремонт и отделка</div>
+<div data-region="widget-selection-new"></div>
+<div class="banner">Баннер: Оптовикам</div>
+<div data-region="widget-selection-top"></div>
+</script>
+<script type="text/template" id="widgetCart-main-tpl">
+<a href="#cart" class="cart">
+    <span class="glyphicon glyphicon-shopping-cart cart-ico"></span> Корзина:
+    <span data-ui="card-count"><%= count%></span>
+</a>
+<!--<div class="cart__container"></div>-->
+</script>
+<script type="text/template" id="widgetSelection-item-tpl">
+<div class="product" data-id="<%= id %>">
+    <% if(sale) { %>
+    <div class="product-label_sale"><%= sale %>%</div>
+    <% } %>
+    <% if(isNew) { %>
+    <div class="product-label_new">new</div>
+    <% } %>
+    <% if(isTop) { %>
+    <div class="product-label_top">топ</div>
+    <% } %>
+    <img class="product__picture" src="<%= image %>" alt="">
+    <h3 class="product__title"><%= title %></h3>
+    <div>
+        <% if(priceSale) { %>
+        <div class="product__price_old">
+            <%= priceSale %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+        <% }%>
+        <div class="product__price">
+            <%= price %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+    </div>
+    <div class="product__to-cart" data-ui="to-cart">в корзину</div>
+</div>
+</script>
+<!-- endinject -->
+<script src="vendor.js"></script>
+<script src="build.js"></script>
+</body>
+</html>

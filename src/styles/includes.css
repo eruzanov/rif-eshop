@@ -1,0 +1,61 @@
+.divider {
+  margin: 0 10px;
+  border-right: 1px solid #eee;
+}
+.btn {
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: #0E6EB5;
+}
+.col-1 {
+  padding: 0 10px;
+  width: 8.33333333%;
+}
+.col-2 {
+  padding: 0 10px;
+  width: 16.66666667%;
+}
+.col-3 {
+  padding: 0 10px;
+  width: 25%;
+}
+.col-4 {
+  padding: 0 10px;
+  width: 33.33333333%;
+}
+.col-5 {
+  padding: 0 10px;
+  width: 41.66666667%;
+}
+.col-6 {
+  padding: 0 10px;
+  width: 50%;
+}
+.col-7 {
+  padding: 0 10px;
+  width: 58.33333333%;
+}
+.col-8 {
+  padding: 0 10px;
+  width: 66.66666667%;
+}
+.col-9 {
+  padding: 0 10px;
+  width: 75%;
+}
+.col-10 {
+  padding: 0 10px;
+  width: 83.33333333%;
+}
+.col-11 {
+  padding: 0 10px;
+  width: 91.66666667%;
+}
+.col-12 {
+  padding: 0 10px;
+  width: 100%;
+}
+.row {
+  display: flex;
+}

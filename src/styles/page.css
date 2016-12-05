@@ -1,0 +1,252 @@
+.divider {
+  margin: 0 10px;
+  border-right: 1px solid #eee;
+}
+.btn {
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: #0E6EB5;
+}
+.col-1 {
+  padding: 0 10px;
+  width: 8.33333333%;
+}
+.col-2 {
+  padding: 0 10px;
+  width: 16.66666667%;
+}
+.col-3 {
+  padding: 0 10px;
+  width: 25%;
+}
+.col-4 {
+  padding: 0 10px;
+  width: 33.33333333%;
+}
+.col-5 {
+  padding: 0 10px;
+  width: 41.66666667%;
+}
+.col-6 {
+  padding: 0 10px;
+  width: 50%;
+}
+.col-7 {
+  padding: 0 10px;
+  width: 58.33333333%;
+}
+.col-8 {
+  padding: 0 10px;
+  width: 66.66666667%;
+}
+.col-9 {
+  padding: 0 10px;
+  width: 75%;
+}
+.col-10 {
+  padding: 0 10px;
+  width: 83.33333333%;
+}
+.col-11 {
+  padding: 0 10px;
+  width: 91.66666667%;
+}
+.col-12 {
+  padding: 0 10px;
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+/* Mostly: http://ryanfait.com/sticky-footer/ */
+html,
+body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -290px;
+}
+.page-wrap .header {
+  background-color: #EEEEEE;
+}
+.page-wrap .header .header__top {
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 40px;
+  border-bottom: 1px solid #d5d5d5;
+  text-align: center;
+}
+.page-wrap .header .header__top a {
+  line-height: 40px;
+  color: #000;
+  text-decoration: none;
+}
+.page-wrap .header .header__top a:hover {
+  color: #0E6EB5;
+}
+.page-wrap .header .header__middle {
+  margin: 0 auto;
+  width: 1300px;
+  height: 100px;
+}
+.page-wrap .header .header__middle .logo {
+  float: left;
+  margin-right: 20px;
+  width: 305px;
+  height: 100px;
+  background-image: url(../images/logo.png);
+  background-position: center 130%;
+  background-size: 80%;
+}
+.page-wrap .header .header__middle > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100px;
+}
+.page-wrap .header .header__middle > div .search {
+  position: relative;
+  width: 500px;
+}
+.page-wrap .header .header__middle > div .search .search__input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  padding: 0 10px;
+  width: 410px;
+  height: 40px;
+  line-height: 28px;
+  font-size: 1.3em;
+  border: 1px solid #0E6EB5;
+  background-color: #FFFFFF;
+}
+.page-wrap .header .header__middle > div .search .search__input:focus {
+  outline: none;
+}
+.page-wrap .header .header__middle > div .search .search__submit {
+  position: absolute;
+  top: 50%;
+  left: 410px;
+  margin-top: -20px;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #0E6EB5;
+  color: #FFFFFF;
+}
+.page-wrap .header .header__middle > div .search .search__submit:hover {
+  background-color: #107ccd;
+}
+.page-wrap .header .header__middle > div .phones {
+  padding: 10px 0;
+}
+.page-wrap .header .header__middle > div .phones .phones__item {
+  line-height: 40px;
+  font-size: 1.5em;
+  color: #E88A0C;
+  text-decoration: none;
+}
+.page-wrap .header .nav-menu {
+  background-color: #0E6EB5;
+  font-size: 17px;
+}
+.page-wrap .header .nav-menu div {
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+}
+.page-wrap .header .nav-menu div .nav-menu__item {
+  display: block;
+  padding: 0 30px 0 10px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.page-wrap .header .nav-menu div .nav-menu__item:hover {
+  text-decoration: underline;
+}
+.page-wrap .header .nav-menu div .nav-menu__item_active,
+.page-wrap .header .nav-menu div .nav-menu__item_active:hover {
+  background-color: #128be4;
+}
+.page-wrap .header .nav-menu div .nav-menu__item_catalog {
+  margin-right: 20px;
+  width: 305px;
+  padding: 0 10px;
+}
+.page-wrap .header .nav-menu div .nav-menu__item_stock {
+  padding: 0 20px;
+  background-color: #FF0000;
+}
+.page-wrap .header .nav-menu div .nav-menu__item_stock:hover {
+  background-color: #FF0000;
+}
+.page-wrap .main-page-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+}
+.page-wrap .main-page-wrapper .main-page-sidebar {
+  width: 305px;
+}
+.page-wrap .main-page-wrapper .main-page-container {
+  width: 995px;
+}
+.page-wrap .page-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 1300px;
+}
+.page-wrap .page-wrapper .page-sidebar {
+  padding-right: 20px;
+  width: 325px;
+}
+.page-wrap .page-wrapper .page-container {
+  width: 975px;
+}
+.page-wrap .page-wrapper .page-container h1 {
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  border-bottom: 1px solid #EEEEEE;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 290px;
+}
+.site-footer {
+  height: 290px;
+  background: #EEEEEE;
+}
+.site-footer .site-footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 1300px;
+}
+.site-footer .site-footer__top ul {
+  list-style: none;
+}
+.site-footer .site-footer__top ul li {
+  margin: 10px 0;
+}
+.site-footer .site-footer__top address {
+  font-style: normal;
+}
+.site-footer .site-footer__top p {
+  margin: 10px 0;
+}
+.site-footer .copyright {
+  line-height: 40px;
+  border-top: 1px solid #d5d5d5;
+  text-align: center;
+}

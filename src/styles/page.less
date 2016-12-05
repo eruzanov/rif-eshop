@@ -1,6 +1,6 @@
-/* Mostly: http://ryanfait.com/sticky-footer/ */
-@import "variables";
+@import "includes";
 
+/* Mostly: http://ryanfait.com/sticky-footer/ */
 html, body {
   height: 100%;
 }
@@ -42,8 +42,8 @@ html, body {
       > div {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
+        align-items: stretch;
+        height: 100px;
         .search {
           position: relative;
           width: 500px;
@@ -79,20 +79,12 @@ html, body {
           }
         }
         .phones {
+          padding: 10px 0;
           .phones__item {
             line-height: 40px;
             font-size: 1.5em;
             color: @color-warning;
             text-decoration: none;
-          }
-        }
-        .cart {
-          padding: 0 20px;
-          font-size: 1.3em;
-          text-decoration: none;
-          .card-ico {
-            vertical-align: text-bottom;
-            font-size: 1.5em;
           }
         }
       }
@@ -205,3 +197,4 @@ html, body {
     text-align: center;
   }
 }
+

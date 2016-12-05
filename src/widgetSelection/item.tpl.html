@@ -1,0 +1,26 @@
+<div class="product" data-id="<%= id %>">
+    <% if(sale) { %>
+    <div class="product-label_sale"><%= sale %>%</div>
+    <% } %>
+    <% if(isNew) { %>
+    <div class="product-label_new">new</div>
+    <% } %>
+    <% if(isTop) { %>
+    <div class="product-label_top">топ</div>
+    <% } %>
+    <img class="product__picture" src="<%= image %>" alt="">
+    <h3 class="product__title"><%= title %></h3>
+    <div>
+        <% if(priceSale) { %>
+        <div class="product__price_old">
+            <%= priceSale %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+        <% }%>
+        <div class="product__price">
+            <%= price %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+    </div>
+    <div class="product__to-cart" data-ui="to-cart">в корзину</div>
+</div>

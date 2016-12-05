@@ -1,0 +1,35 @@
+@color-primary: #0E6EB5;
+@color-success: #FFF80D;
+@color-info: #740CE8;
+@color-warning: #E88A0C;
+@color-danger: #FF0000;
+@color-divider: #EEEEEE;
+@color-divider-darken: darken(@color-divider, 10%);
+
+@container-width: 1300px;
+@sidebar-offset: 20px;
+@footer-height: 290px;
+
+.divider {
+  margin: 0 10px;
+  border-right: 1px solid #eee;
+}
+
+.btn {
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: @color-primary;
+}
+
+.for(@index) when (@index <= 12) {
+  .col-@{index} {
+    padding: 0 10px;
+    width: 100% / 12 * @index;
+  }
+  .for(@index + 1)
+}
+.for(1);
+.row {
+  display: flex;
+}

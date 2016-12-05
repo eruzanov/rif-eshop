@@ -1,0 +1,34 @@
+@import "../styles/includes";
+
+.cart {
+  position: relative;
+  line-height: 100px;
+  a {
+    padding: 0 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+    .cart-ico {
+      vertical-align: text-bottom;
+      font-size: 1.5em;
+    }
+  }
+  .cart__container {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 600px;
+    height: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid @color-primary;
+  }
+  //&:hover .cart__container {
+  //  display: block;
+  //  //box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, .2);
+  //}
+  //&:hover {
+  //  z-index: 10;
+  //  background-color: #FFFFFF;
+  //  //box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, .2);
+  //}
+}

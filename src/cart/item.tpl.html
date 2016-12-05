@@ -1,0 +1,39 @@
+<div class="product-label_sale"><%= sale %>%</div>
+<div class="col-3">
+    <img class="product__picture" src="<%= image %>" alt="">
+</div>
+<div class="col-6">
+    <h3 class="product__title"><%= title %></h3>
+    <div>
+        <div class="product__price_old">
+            <%= price %>
+            <span class="glyphicon glyphicon-rub"></span>
+        </div>
+        <div class="product__price">
+            <%= priceSale %>
+            <span class="glyphicon glyphicon-rub"></span>
+            / шт.
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="product__actions">
+        <div class="product__count">
+            <button class="btn" data-ui="minus">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+            <input type="text" value="<%= count %>" data-ui="count" readonly>
+            <button class="btn" data-ui="plus">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+        <button class="btn product__remove" data-ui="remove">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+    <p class="product__amount-title">Сумма:</p>
+    <p class="product__amount">
+        <span data-ui="priceTotal"><%= priceTotal %></span>
+        <span class="glyphicon glyphicon-rub"></span>
+    </p>
+</div>
