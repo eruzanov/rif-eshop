@@ -482,6 +482,7 @@ var App =
 	  template: '#cart-main-tpl',
 
 	  ui: {
+	    checkout: '[data-ui="checkout"]',
 	    total: '[data-ui="total"]'
 	  },
 
@@ -491,10 +492,12 @@ var App =
 
 	  childViewEvents: _defineProperty({}, 'update', function update() {
 	    this.ui.total.text(total());
+	    this.ui.checkout[_collection2.default.length ? 'removeClass' : 'addClass']('hide');
 	  }),
 
 	  onRender: function onRender() {
 	    this.showChildView('list', new _ListView2.default({ collection: _collection2.default }));
+	    this.ui.checkout[_collection2.default.length ? 'removeClass' : 'addClass']('hide');
 	  },
 	  templateContext: function templateContext() {
 	    return { total: total() };
@@ -526,6 +529,10 @@ var App =
 	  className: 'page-content',
 
 	  childView: _ItemView2.default,
+
+	  emptyView: Mn.View.extend({
+	    template: _.template('<p>Ваша корзина пуста</p>')
+	  }),
 
 	  collectionEvents: (_collectionEvents = {}, _defineProperty(_collectionEvents, 'update', function update() {
 	    this.triggerMethod('update');

@@ -15,6 +15,7 @@ export default Mn.View.extend({
   template: '#cart-main-tpl',
 
   ui: {
+    checkout: '[data-ui="checkout"]',
     total: '[data-ui="total"]'
   },
 
@@ -25,11 +26,13 @@ export default Mn.View.extend({
   childViewEvents: {
     ['update']() {
       this.ui.total.text(total());
+      this.ui.checkout[cart.length ? 'removeClass' : 'addClass']('hide');
     }
   },
 
   onRender() {
     this.showChildView('list', new ListView({collection: cart}));
+    this.ui.checkout[cart.length ? 'removeClass' : 'addClass']('hide');
   },
 
   templateContext() {

@@ -6,6 +6,10 @@ export default Mn.CollectionView.extend({
 
   childView: ItemView,
 
+  emptyView: Mn.View.extend({
+    template: _.template('<p>Ваша корзина пуста</p>')
+  }),
+
   collectionEvents: {
     ['update']() {
       this.triggerMethod('update');
